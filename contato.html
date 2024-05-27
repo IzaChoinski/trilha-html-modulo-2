@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        form {
+        display: flex;
+        flex-direction: column;
+    }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-info {
+            width: 45%; /* Defina a largura desejada para as informações de contato */
+        }
+
+        .contact-form {
+            width: 45%; /* Defina a largura desejada para o formulário de contato */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <h1 align="center">Menu</h1>
+            <ul>
+                <li><a href="template.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="Horarios.html">Horários</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="u.png" align="center" width="100"   alt="logo da clinica">
+            </div>
+    
+            <div class="content container"> <!-- Adicione a classe 'container' aqui -->
+                <section class="contact-info">
+                    <h1>Contato</h1>
+                    <h2>Informações de Contato</h2>
+                    <p><strong>Endereço:</strong> Rua das Flores, 123, Bairro Saúde, Cidade, Estado, CEP 12345-678
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.0865790590083!2d-49.29276972528521!3d-25.668424542366793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dc55e690148d89%3A0x5d4142891426756e!2sR.%20Eti%C3%B3pia%20-%20Na%C3%A7%C3%B5es%2C%20Fazenda%20Rio%20Grande%20-%20PR%2C%2083823-259!5e0!3m2!1spt-BR!2sbr!4v1716829915685!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <h2>Telefone:</h2>
+                    <p>(XX) XXXX-XXXX</p>
+
+                    <h2>E-mail:</h2>
+                    <p>contato@clinicaultrasaude.com.br</p>
+                </section>
+                <section class="contact-form">
+                    <h2>Formulário para contato</h2>
+                    <form onsubmit="" method="get">
+                        <label for="">Nome:</label><input type="text" name="name" width=""><br>
+                        <label for="">E-mail:</label><input type="email"><br>
+                        <label for="">Assunto:</label><input type="text"><br>
+                        <label for="">Mensagem:</label><br><textarea name="Mensagem" cols="30" rows="10"></textarea><br>
+                        <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+                        
+
+                    </form>
+                </section>
+            </div>
+    
+            <div class="footer">
+                <H3 align="center">Ultra Saude LTDA</H3>
+                <p align="center">Todos os Direitos reservados &reg</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
